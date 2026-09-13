@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5 \
+    android.hardware.radio@1.2 \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.secure_element@1.2 \
