@@ -42,6 +42,13 @@ service dhcpcd_usb0 /system/bin/dhcpcd -ABKL
 on property:ro.radio.noril=yes
     stop ril-daemon
 
+#RIL
+service vendor.netmgrd /vendor/bin/netmgrd
+    class main
+    user root
+    group root radio net_admin net_raw inet wakelock oem_2901
+    capabilities NET_ADMIN NET_RAW
+
 # for recovering at restarting netd
 service recover_radio /vendor/bin/sh /system/etc/restart_radio_process.sh
     class main
