@@ -43,6 +43,3 @@ on property:init.svc.vendor.ril-daemon2=running
 
 on property:init.svc.vendor.ril-daemon3=running
     stop vendor.ril-daemon3
-
-on property:init.svc.vendor.netmgrd=running && property:ro.vendor.use_data_netmgrd=false
-    stop vendor.netmgrd
