@@ -9,3 +9,15 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.rat_on=combine
 rild.libargs=-d /dev/umts_ipc0
 telephony.lteOnCdmaDevice=0
+
+# Qualcomm Netmgrd Konfiguration
+netmgr_config.msm8996.ep_type=4
+netmgr_config.msm8996.clat_rps_mask=0
+netmgr_config.msm8996.netdev_max_backlog=1024
+netmgr_config.msm8996.disable_hystart=1
+netmgr_config.msm8996.initial_ssthresh=0
+netmgr_config.msm8996.rtm_rmnet_data_enabled=true
+netmgr_config.msm8996.dl_marker_enabled=true
+netmgr_config.msm8996.qos_disabled=false
+netmgr_config.msm8996.kfc_mode=0
+netmgr_config.msm8996.dataformat_num_mux_channels=8
