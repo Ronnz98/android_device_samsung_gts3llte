@@ -4,12 +4,12 @@
 # This is a common source of Android security bugs.
 #
 
-service sec_diag_uart_log /system/bin/sec_diag_uart_log
+service sec_diag_uart_log /vendor/bin/sec_diag_uart_log
     class main
     user root
     group radio oem_2901 system
 
-service SMD-daemon /system/bin/smdexe
+service SMD-daemon /vendor/bin/smdexe
     class main
     user root
     group system radio inet net_raw
@@ -25,23 +25,3 @@ service start_netmgrd /vendor/bin/sh /system/etc/control_netmgrd.sh start
     group radio
     disabled
     oneshot
-
-service stop_netmgrd /vendor/bin/sh /system/etc/control_netmgrd.sh stop
-    class main
-    user root
-    group radio
-    disabled
-    oneshot
-
-on property:ril.restart.netmgrd=true
-    start stop_netmgrd
-
-on property:init.svc.netmgrd=stopped
-    start start_netmgrd
-
-on property:sys.control.netmgr=started
-    setprop ril.restart.netmgrd false
-    setprop sys.control.netmgr done
-
-on property:init.svc.netmgrd=restarting
-    setprop sys.control.netmgr restarted
