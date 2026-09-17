@@ -9,8 +9,8 @@
 function blob_fixup() {
     case "${1}" in
     vendor/lib64/libsec-ril.so)
-        sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
-        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full-v29.so" "libprotobuf-cpp-full.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-v29.so" "libprotobuf-cpp-lite.so" "${2}"
         ;;
     esac
 }
