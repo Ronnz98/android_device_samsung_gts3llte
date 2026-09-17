@@ -48,7 +48,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2 \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-v29 \
+    libprotobuf-cpp-lite-v29 \
     secril_config_svc
 
 # Inherit from gts3l-common
