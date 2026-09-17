@@ -34,3 +34,7 @@ vendor/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so
 vendor/lib64/vendor.samsung.hardware.radio.secbridge@1.0_vendor.so
 vendor/lib64/vendor.samsung.hardware.radio.sechook@1.0_vendor.so
 vendor/lib64/vendor.samsung.hardware.radio@1.2_vendor.so
+
+# Protobuf v29 Legacy Support for Samsung RIL
+vendor/lib64/libprotobuf-cpp-full-v29.so
+vendor/lib64/libprotobuf-cpp-lite-v29.so
