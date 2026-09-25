@@ -1,5 +1,6 @@
 # Radio
 ro.telephony.default_network=9
+ro.vendor.radio.libpath=/vendor/lib64/libsec-ril.so
 ro.config.dha_pwhitelist_enable=1
 persist.radio.multisim.config=ss
 persist.vendor.radio.atfwd.start=true
@@ -7,5 +8,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sw_odc=true
 rild.libargs=-d /dev/umts_ipc0
+ril.cbd.dt_supported=true
 telephony.lteOnCdmaDevice=0
