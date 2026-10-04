@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 # RIL
 # RIL & Telephony HALs (.vendor zwingend erforderlich für Android 13 Vendor-Isolation)
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
     android.hardware.radio.deprecated@1.0 \
