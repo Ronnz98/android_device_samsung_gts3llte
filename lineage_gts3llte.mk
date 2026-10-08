@@ -42,3 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "samsung/gts3lltekx/gts3lltekx:9/PPR1.180610.011/T825N0KOU3CTD1:user/release-keys"
+
+# USB Debugging
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES := $(filter -v ro.adb.secure=%,$(PRODUCT_SYSTEM_DEFAULT_PROPERTIES))
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
