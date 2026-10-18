@@ -46,8 +46,9 @@ on property:ro.radio.noril=yes
 service vendor.netmgrd /vendor/bin/netmgrd
     class main
     user root
-    group root radio net_admin net_raw inet wakelock oem_2901
+    group radio audio bluetooth gps nfc diag inet net_admin net_raw wakelock oem_2901
     capabilities NET_ADMIN NET_RAW
+    override
 
 # for recovering at restarting netd
 service recover_radio /vendor/bin/sh /system/etc/restart_radio_process.sh
