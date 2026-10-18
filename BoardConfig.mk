@@ -17,6 +17,8 @@
 # inherit from common gts3l-common
 -include device/samsung/gts3l-common/BoardConfigCommon.mk
 
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 DEVICE_PATH := device/samsung/gts3llte
 
 # Assert
