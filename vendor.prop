@@ -13,6 +13,14 @@ persist.vendor.radio.sw_odc=true
 ril.cbd.dt_supported=true
 telephony.lteOnCdmaDevice=0
 
+ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.data.mode=concurrent
+persist.data.netmgrd.qos.enable=false
+
+persist.vendor.netmgrd.time_out=true
+ro.vendor.use_data_netmgrd=true
+persist.vendor.data.iwlan.enable=false
+
 # Qualcomm Netmgrd Konfiguration
 netmgr_config.msm8996.ep_type=4
 netmgr_config.msm8996.clat_rps_mask=0
