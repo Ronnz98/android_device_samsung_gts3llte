@@ -17,6 +17,7 @@ on fs
 on boot
 # permission for MUIC(waterproof)
     chown system radio /sys/class/sec/switch/uart_en
+    setprop ro.vendor.use_data_netmgrd true
     
 # permission for touchkey grip
     chown system radio /sys/class/sec/sec_touchkey/sar_enable
@@ -151,3 +152,4 @@ service start_hci_filter /system/bin/wcnss_filter
     user bluetooth
     group bluetooth
     disabled
+
