@@ -49,6 +49,7 @@ service vendor.netmgrd /vendor/bin/netmgrd
     group radio audio bluetooth gps nfc diag inet net_admin net_raw wakelock oem_2901
     capabilities NET_ADMIN NET_RAW
     override
+    oom_score_adjust -1000
     writepid /dev/cpuset/system-background/tasks
 
 # for recovering at restarting netd
