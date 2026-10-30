@@ -32,3 +32,9 @@ netmgr_config.msm8996.dl_marker_enabled=true
 netmgr_config.msm8996.qos_disabled=false
 netmgr_config.msm8996.kfc_mode=0
 netmgr_config.msm8996.dataformat_num_mux_channels=8
+
+# RIL Single SIM Enforcement
+ro.multisim.config=ss
+persist.radio.multisim.config=ss
+ro.telephony.default_network=9
+telephony.lteOnGsmDevice=1
