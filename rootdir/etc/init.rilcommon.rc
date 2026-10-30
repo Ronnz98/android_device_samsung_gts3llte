@@ -50,7 +50,7 @@ service vendor.netmgrd /vendor/bin/netmgrd
     capabilities NET_ADMIN NET_RAW
     override
     oom_score_adjust -1000
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServicePerformance
 
 # for recovering at restarting netd
 service recover_radio /vendor/bin/sh /system/etc/restart_radio_process.sh
