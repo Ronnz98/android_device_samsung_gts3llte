@@ -3,6 +3,7 @@ ro.telephony.default_network=9
 ro.config.dha_pwhitelist_enable=1
 ro.vendor.radio.libpath=/vendor/lib64/libsec-ril.so
 persist.radio.multisim.config=ss
+ro.multisim.config=ss
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.sib16_support=1
@@ -12,6 +13,7 @@ persist.vendor.radio.sw_odc=true
 #rild.libargs=-d /dev/umts_ipc0
 ril.cbd.dt_supported=true
 telephony.lteOnCdmaDevice=0
+telephony.lteOnGsmDevice=1
 
 ro.telephony.iwlan_operation_mode=legacy
 persist.vendor.data.mode=concurrent
@@ -35,8 +37,3 @@ netmgr_config.msm8996.dl_marker_enabled=true
 netmgr_config.msm8996.qos_disabled=false
 netmgr_config.msm8996.kfc_mode=0
 netmgr_config.msm8996.dataformat_num_mux_channels=8
-
-# RIL Single SIM Enforcement
-ro.multisim.config=ss
-persist.radio.multisim.config=ss
-telephony.lteOnGsmDevice=1
