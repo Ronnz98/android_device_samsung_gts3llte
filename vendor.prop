@@ -21,6 +21,12 @@ persist.vendor.netmgrd.time_out=true
 ro.vendor.use_data_netmgrd=true
 persist.vendor.data.iwlan.enable=false
 
+# Data modules
+persist.data.dropssdp=false
+persist.data.iwlan.enable=true
+persist.data.mode=concurrent
+persist.data.netmgrd.qos.enable=false
+
 # Qualcomm Netmgrd Konfiguration
 netmgr_config.msm8996.ep_type=4
 netmgr_config.msm8996.clat_rps_mask=0
