@@ -15,16 +15,13 @@ telephony.lteOnCdmaDevice=0
 
 ro.telephony.iwlan_operation_mode=legacy
 persist.vendor.data.mode=concurrent
-persist.data.netmgrd.qos.enable=false
+persist.vendor.data.iwlan.enable=false
 
 persist.vendor.netmgrd.time_out=true
 ro.vendor.use_data_netmgrd=true
-persist.vendor.data.iwlan.enable=false
 
-# Data modules
 persist.data.dropssdp=false
 persist.data.iwlan.enable=true
-persist.data.mode=concurrent
 persist.data.netmgrd.qos.enable=false
 
 # Qualcomm Netmgrd Konfiguration
@@ -42,5 +39,4 @@ netmgr_config.msm8996.dataformat_num_mux_channels=8
 # RIL Single SIM Enforcement
 ro.multisim.config=ss
 persist.radio.multisim.config=ss
-ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
