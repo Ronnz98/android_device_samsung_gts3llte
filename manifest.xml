@@ -1,9 +1,16 @@
 <manifest version="1.0" type="device" target-level="legacy">
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <fqname>@1.4::IRadio/slot1</fqname>
-        <fqname>@1.2::ISap/slot1</fqname>
+        <version>1.2</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
