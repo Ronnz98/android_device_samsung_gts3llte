@@ -15,7 +15,7 @@ service vendor.ril-daemon /vendor/bin/hw/rild -l "/vendor/lib64/libsec-ril.so"
 service vendor.qmuxd /vendor/bin/qmuxd
     class main
     user root
-    group radio audio bluetooth gps oem_2901
+    group radio audio bluetooth gps nfc diag oem_2901
 
 service irsc_util_oem /vendor/bin/irsc_util "/vendor/etc/sec_config_oem"
     class core
