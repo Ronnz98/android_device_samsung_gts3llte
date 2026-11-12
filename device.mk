@@ -43,12 +43,14 @@ PRODUCT_COPY_FILES += \
 # RIL
 # RIL & Telephony HALs (.vendor zwingend erforderlich für Android 13 Vendor-Isolation)
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
     android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
-    android.hardware.radio.config@1.0 \
     android.hardware.radio.deprecated@1.0 \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libprotobuf-cpp-full \
+    secril_config_svc
 
 # Inherit from gts3l-common
 $(call inherit-product, device/samsung/gts3l-common/gts3l.mk)
