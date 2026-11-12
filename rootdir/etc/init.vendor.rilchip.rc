@@ -22,11 +22,6 @@ service irsc_util_oem /vendor/bin/irsc_util "/vendor/etc/sec_config_oem"
     user root
     oneshot
 
-on early-init
-    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox mknod /dev/umts_ipc0 c 234 0
-    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox mknod /dev/umts_boot0 c 234 1
-    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox mknod /dev/umts_ipc1 c 234 2
-
 on boot
     chown radio radio /dev/umts_ipc0
     chown radio radio /dev/umts_boot0
