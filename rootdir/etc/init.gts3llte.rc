@@ -15,6 +15,9 @@ on fs
     chmod 0755 /vzw
 
 on boot
+# Boot modem subsystem
+    chown root radio /sys/kernel/boot_modem/boot
+    write /sys/kernel/boot_modem/boot 1
 # permission for MUIC(waterproof)
     chown system radio /sys/class/sec/switch/uart_en
     setprop ro.vendor.use_data_netmgrd true
