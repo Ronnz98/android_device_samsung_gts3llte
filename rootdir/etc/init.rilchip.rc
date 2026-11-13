@@ -15,6 +15,7 @@ service SMD-daemon /vendor/bin/smdexe
     group system radio inet net_raw
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
-    class main
+    class late_start
     user system
     group system radio
+    disabled
