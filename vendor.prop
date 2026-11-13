@@ -11,19 +11,20 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sw_odc=true
 #rild.libargs=-d /dev/umts_ipc0
-ril.cbd.dt_supported=true
+#ril.cbd.dt_supported=true
 telephony.lteOnCdmaDevice=0
 telephony.lteOnGsmDevice=1
 
 ro.telephony.iwlan_operation_mode=legacy
 persist.vendor.data.mode=concurrent
 persist.vendor.data.iwlan.enable=false
+persist.data.iwlan.enable=false
 
 persist.vendor.netmgrd.time_out=true
 ro.vendor.use_data_netmgrd=true
 
 persist.data.dropssdp=false
-persist.data.iwlan.enable=true
+
 persist.data.netmgrd.qos.enable=false
 
 # Qualcomm Netmgrd Konfiguration
