@@ -47,7 +47,6 @@ service vendor.netmgrd /vendor/bin/netmgrd
     class main
     user root
     group radio audio bluetooth gps nfc diag inet net_admin net_raw wakelock oem_2901
-    capabilities NET_ADMIN NET_RAW
     oom_score_adjust -1000
     task_profiles ServicePerformance
     disabled
