@@ -142,3 +142,5 @@ on property:gsm.current.vsid2=*
 on property:ro.factory.factory_binary=*    
     setprop ro.vendor.factory_binary ${ro.factory.factory_binary}
 
+on property:init.svc.vendor.netmgrd=running
+    restart vendor.ril-daemon
